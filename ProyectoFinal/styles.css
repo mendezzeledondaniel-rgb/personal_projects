@@ -1,0 +1,743 @@
+:root {
+  --primary-purple: #6A0DAD;
+  --secondary-purple: #9370DB;
+  --light-purple: #DDA0DD;
+  --primary-orange: #f5f5ba;
+  --secondary-orange: #FFA500;
+  --light-orange: #f07f1c;
+  --primary-green: #32CD32;
+  --secondary-green: #228B22;
+  --light-green: #90EE90;
+  --dark-gray: #333;
+  --light-gray: #f0f0f0;
+  --medium-gray: #e0e0e0;
+  --border-color: #ccc;
+  --white: #FFFFFF;
+  --light-blue: #87CEEB;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light-orange);
+  color: var(--dark-gray);
+  margin: 0;
+  padding: 0;
+}
+
+.pagina_inicio_sesion_registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.titulo p {
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: var(--white);
+}
+
+.boton_campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 20px 60px 20px;
+}
+
+.espaciado_footer {
+  margin: 60px 0px 0px 0px;
+}
+
+.campo_img_pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.titulo_principal {
+  display: block;
+  justify-content: center;
+  font-size: 48px;
+  line-height: 68px;
+  font-weight: 600;
+  color: var(--primary-orange);
+  text-decoration: none;
+}
+
+.header_principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-purple);
+  color: var(--white);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: right;
+}
+
+ul.nav_bar_style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+ul.nav_bar_style li {
+  float: left;
+}
+
+ul.nav_bar_style li a {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  margin: 0 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+ul.nav_bar_style li a:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+.hud_display {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cajita_pokemon_principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 4px solid var(--primary-green);
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: var(--light-green);
+}
+
+.cajita_de_cada_pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid var(--secondary-orange);
+  border-radius: 8px;
+  font-size: 12px;
+  background-color: var(--light-orange);
+}
+
+.hud_display_usuario,
+.hud_display_nivel,
+.hud_display_experiencia {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.hud_display_pokemon {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.desaparece_lista_tareas {
+  display: none;
+}
+
+.aparece_elemento {
+  display: block;
+}
+
+.contenedor_tareas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.botones_agregar_modificar_eliminar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.boton_tarea {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton_tarea:hover {
+  background-color: var(--secondary-green);
+}
+
+.tarea_modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tarea_modal_contenido {
+  background-color: var(--primary-purple);
+  color: var(--white);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cerrar_tarea_modal {
+  color: var(--dark-gray);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cerrar_tarea_modal:hover {
+  color: var(--primary-purple);
+}
+
+.perfil_nivel_y_xp {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.perfil_pokemon {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  margin-top: 20px;
+}
+
+.perfil_pokemon_principal_y_lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.mi_perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.perfil_info_wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+.perfil_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.perfil_nombre_usuario {
+  grid-column: 1 / -1;
+  background-color: var(--secondary-purple);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.perfil_nombre_usuario h3 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--white);
+}
+
+.perfil_nivel_y_xp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.perfil_nivel_usuario,
+.perfil_xp_usuario {
+  background-color: var(--light-purple);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.perfil_nivel_usuario p,
+.perfil_xp_usuario p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.perfil_total_habitos,
+.perfil_total_pokemon {
+  background-color: var(--light-purple);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.perfil_total_habitos h4,
+.perfil_total_pokemon h4 {
+  margin: 0 0 10px 0;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.perfil_total_habitos p,
+.perfil_total_pokemon p {
+  margin: 5px 0;
+  color: var(--white);
+}
+
+.perfil_pokemon {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.perfil_pokemon_principal_y_lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.perfil_pokemon_principal,
+.perfil_lista_pokemon {
+  background-color: var(--light-purple);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.perfil_pokemon_principal p,
+.perfil_lista_pokemon p {
+  margin: 0;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.pagina_principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cambiar_pokemon_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.cambiar_pokemon_container h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.cambiar_pokemon_container h3 {
+  margin: 10px 0;
+}
+
+.registro_tareas_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow-x: auto;
+}
+
+.registro_tareas_titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.total_registros_del_usuario {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#perfil_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.registro_tareas_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  font-weight: bold;
+  background-color: var(--secondary-purple);
+  color: white;
+}
+
+.registro_tareas_lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.registro_tareas_fecha_separador {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  background-color: var(--secondary-purple);
+  color: var(--white);
+  border-radius: 4px;
+}
+
+.registro_tareas_linea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--light-purple);
+  color: var(--dark-gray);
+}
+
+.registro_tareas_header_item {
+  flex: 1;
+  text-align: center;
+}
+
+.registro_tarea {
+  flex: 1;
+  text-align: center;
+}
+
+.progreso-barra {
+  width: 100%;
+  height: 20px;
+  background-color: var(--medium-gray);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progreso-llenado {
+  height: 100%;
+  background-color: var(--primary-green);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.racha_habito {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--light-purple);
+}
+
+.tarea_completada {
+  text-decoration: line-through;
+  color: var(--dark-gray);
+}
+
+.detalles_cajitas_rachas {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.cajita_rachas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 20px;
+  border-radius: 3px;
+  border: 1px solid var(--light-blue);
+  padding: 10px;
+  background-color: var(--light-purple);
+}
+
+.logro_obtenido {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--light-blue);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.actividad_item {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: var(--light-purple);
+  color: var(--white);
+}
+
+.mis_pokemon_container {
+  padding: 20px;
+  background-color: var(--primary-purple);
+  color: var(--white);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.agregar_pokemon_top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#agregar_pokemon_btn {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#agregar_pokemon_btn:hover {
+  background-color: var(--secondary-green);
+}
+
+#agregar_pokemon_btn:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}
+
+.lista_pokemon_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pokemon_item {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--light-purple);
+  color: var(--white);
+  width: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon_item img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon_item h4 {
+  margin: 10px 0;
+  color: var(--white);
+}
+
+/* Estilos para modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_content {
+  background-color: var(--primary-purple);
+  color: var(--white);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  color: var(--dark-gray);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--primary-purple);
+  text-decoration: none;
+}
+
+.titulo_agregar_pokemon {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo_agregar_pokemon h2 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.titulo_agregar_pokemon div {
+  font-size: 16px;
+  color: var(--white);
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+/* Estilos generales para botones */
+button {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-green);
+}
+
+button:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}
+
+/* Estilos específicos si es necesario */
+.boton_tarea,
+#agregar_pokemon_btn {
+  /* Heredan del general */
+}
+
