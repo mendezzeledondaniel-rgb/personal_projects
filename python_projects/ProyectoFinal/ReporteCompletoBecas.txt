@@ -1,0 +1,71 @@
+*******************************************************************
+*** Sistema de Reportes de Becas de los Estudiantes del Colegio ***
+*******************************************************************
+
+--------------------------------------------------------------------
+------ Reporte del total de estudiantes encuestados por nivel ------
+--------------------------------------------------------------------
+
+
+Total por Nivel:
+
+Nivel 1: 1 estudiantes.
+Nivel 2: 0 estudiantes.
+Nivel 3: 0 estudiantes.
+Nivel 4: 0 estudiantes.
+Nivel 5: 0 estudiantes.
+-------------------------------------
+Total de estudiantes encuestados: 1 estudiantes.
+
+
+--------------------------------------------------------------------
+---------- Reporte del Porcentaje de Estudiantes Becados -----------
+--------------------------------------------------------------------
+
+
+Del total de estudiantes:
+
+Porcentaje de ellos con Beca Academica: 0.0%.
+Porcentaje de ellos con Beca Deportiva: 100.0%.
+Porcentaje de ellos Sin Beca: 0.0%.
+
+
+--------------------------------------------------------------------
+- Reporte del Total de Becas otorgadas Mensualmente y Anualmentes --
+--------------------------------------------------------------------
+
+
+Desgloce de Becas Mensuales:
+
+Total de Becas Academicas otorgadas al mes: 0.
+Total en colones: 0.
+Total de Becas Deportivas otorgadas al mes: 1.
+Total en colones: 80000.
+----------------------------------------------------
+Total de inversion al mes: 80000 colones.
+
+
+Desgloce de Becas Anuales:
+
+Total de Becas Academicas otorgadas al año: 0.
+Total en colones: 0.
+Total de Becas Deportivas otorgadas al año: 11.
+Total en colones: 880000.
+----------------------------------------------------
+Total de inversion al año en becas: 880000 colones.
+
+
+--------------------------------------------------------------------
+----------- Reporte del Total de Estudiantes por Equipo ------------
+--------------------------------------------------------------------
+
+
+Total de estudiantes segun al equipo que pertenecen:
+
+Estudiantes que estan en equipo de Baloncesto:  0
+Estudiantes que estan en el equipo de Natacion: 1
+Estudiantes que estan en el equipo de Ajedrez:  0
+Estudiantes que estan Sin Equipo Seleccionado:  0
+
+
+--------------------------FIN DEL REPORTE--------------------------
