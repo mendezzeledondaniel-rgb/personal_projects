@@ -1,0 +1,6 @@
+Albert,Wesker,5647382910,iamthepapu@gmail.com
+Pedrito,Ramirez,123456788,pedrito@gmail.com
+Jorge,Jimenez,112233449,vivaheredia@hotmail.com
+Eiishiro,Oda,222222222,eiishiro.oda@gmail.com
+Akira,Toriyama,111111111,akira.toriyama@gmail.com
+Andres,Camacho,667788991,trambolico@hotmail.com

@@ -1,0 +1,8 @@
+pruebazon,Rafael,Leonardez,112233440,mipass1,VENDEDOR
+testeon,Juan,Morales,999888777,passtest2,GERENTE
+vendedor1,Daniel,Mendez,987654321,ventas2025,VENDEDOR
+tester,Carlos,Marín,777333555,passtest1,VENDEDOR
+admin,Ruben,Cruz,123456789,admin123,GERENTE
+vendedor2,Jose,Fernández,234567890,passVendedor,VENDEDOR
+gerente1,Ricardo,Borge,567801234,passGerente,GERENTE
+PeFo11,Pedrito,Fonseca,111111111,123asdf!,VENDEDOR
